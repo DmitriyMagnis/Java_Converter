@@ -8,12 +8,19 @@ public class Main {
         System.out.println("Converter App");
 
         double kgs = 5;
-        double pounds = convKgsToPounds(kgs);
+        double pnds = 12;
 
-        System.out.println("Result is " + pounds + " pounds." );
+
+        double pounds = convKgsToPounds(kgs);
+        double kilos = convKgsToKgs(pnds);
+
+        System.out.println("Result is " + pounds + " pounds and " + kilos + " kgs.");
     }
 
     private static double convKgsToPounds(double kgs) {
         return kgs * CONV_K;
+    }
+    private static double convKgsToKgs(double pnds) {
+        return pnds / CONV_K;
     }
 }
