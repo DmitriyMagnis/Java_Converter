@@ -11,6 +11,7 @@ public class Main {
         double pounds = convKgsToPounds(kgs);
 
         System.out.println("Result is " + pounds + " pounds." );
+        System.out.println("App for measures converting." );
     }
 
     private static double convKgsToPounds(double kgs) {
